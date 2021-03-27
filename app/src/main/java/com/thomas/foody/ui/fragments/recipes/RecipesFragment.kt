@@ -34,7 +34,6 @@ class RecipesFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_recipes, container, false)
 
-//        mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         return binding.root
     }
