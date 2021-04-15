@@ -1,7 +1,6 @@
 package com.thomas.foody.ui.fragments.recipes.bottomSheet
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -79,11 +78,8 @@ class RecipesBottomSheet : BottomSheetDialogFragment() {
 
     private fun updateChip(chipId: Int, chipGroup: ChipGroup) {
         if (chipId != 0) {
-            try {
-                chipGroup.findViewById<Chip>(chipId).isCheckable = true
-            } catch (e: Exception) {
-                Log.e("RecipesBottomSheet", e.message.toString())
-            }
+
+            chipGroup.findViewById<Chip>(chipId).isCheckable = true
         }
     }
 

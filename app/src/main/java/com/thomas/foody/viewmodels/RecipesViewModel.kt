@@ -43,7 +43,7 @@ class RecipesViewModel @Inject constructor(
             dataStoreRepository.saveMealAndDietType(mealType, mealId, dietType, dietId)
         }
 
-    fun saveBackOnline(backOnline: Boolean) = viewModelScope.launch(Dispatchers.IO) {
+    private fun saveBackOnline(backOnline: Boolean) = viewModelScope.launch(Dispatchers.IO) {
         dataStoreRepository.saveBackOnline(backOnline)
     }
 
@@ -51,9 +51,9 @@ class RecipesViewModel @Inject constructor(
         val queries: HashMap<String, String> = HashMap()
 
         viewModelScope.launch {
-            readMealAndDietType.collect { value ->
-                mealType = value.selectedMealType
-                dietType = value.selectedDietType
+            readMealAndDietType.collect {
+                mealType = it.selectedMealType
+                dietType = it.selectedDietType
             }
         }
 

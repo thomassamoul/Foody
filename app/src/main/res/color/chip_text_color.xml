@@ -3,5 +3,4 @@
 
     <item android:color="@color/checkedChipTextColor" android:state_checked="true" />
     <item android:color="@color/chipTextColor" android:state_checked="false" />
-
 </selector>

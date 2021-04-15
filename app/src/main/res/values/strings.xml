@@ -34,4 +34,7 @@
     <string name="healthy">Healthy</string>
     <string name="cheap">Cheap</string>
     <string name="delete_all">Delete All</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque libero, rhoncus sed orci vitae, feugiat rutrum tortor.</string>
+    <string name="share">Share</string>
 </resources>
